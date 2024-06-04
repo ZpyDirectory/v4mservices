@@ -1,0 +1,210 @@
+.about-section{
+    display: flex;
+    margin: 0 auto ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 100px;
+    padding-top: 150px;
+    max-width: 1800px;
+
+
+    .about-us{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        
+    }
+    .about-us-content{
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container{
+        display: flex;
+        justify-content: center!important;
+        align-items: center !important;
+        flex-direction: column !important;
+
+        .light{
+            position:relative !important;
+            margin-top: -300px;
+        }
+        .wumpuss{
+            margin-right: 90px;
+        }
+    }
+
+    .about-left{
+        display: flex;
+        flex-direction: column;
+        transition: all 0.8s ease-in-out !important;
+        width: 840px;
+
+        .title-about{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 70px;
+            letter-spacing: 0.035em;
+            max-width: 100%;
+            width: 100%;
+            background: linear-gradient(177.78deg, #FFFFFF -43.29%, #F12EF6 52.12%, #AC02F3 73.73%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+
+            
+            span{
+                background: linear-gradient(93.62deg, #933591 47.03%, #4053D4 100%);
+                -webkit-background-clip: text; /* for Safari/Chrome/iOS */
+                color: transparent; 
+                font-style: italic;      
+            }
+        }
+        .about1{
+            font-family: 'Poppins', sans-serif !important;   
+            width: 100%;
+            color: #FFFFFF;
+            font-size: 20px;
+        }
+
+    
+    }
+}
+
+.glow1 {
+	position: absolute;
+	left: 0;
+	top: 100%;
+    z-index: -1 !important;
+}
+
+.wumpuss{
+    pointer-events: none;
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+@media (max-width:1450px){
+
+    .about-left{
+        width: 100% !important;
+    }
+
+}
+
+
+@media (max-width:1290px){
+    .about-section{
+
+        .about-us-content{
+            margin: auto 0 !important;
+            margin-right: 0px !important;
+            display: flex;
+            justify-content: center !important;
+        }
+    
+        .about-us{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    .image-container{
+        display: flex;
+        justify-content: center!important;
+        align-items: center !important;
+        flex-direction: column !important;
+        margin-left: 50px;
+
+        .light{
+            position:relative !important;
+            margin-top: -350px;
+        }
+        .wumpuss{
+            margin-right: 90px;
+        }
+    }
+    
+    .title-about{
+        margin-top: 100px;
+    }
+    .about-section .about-us-content {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width:1040px){
+    .about-section{
+        width: 100% !important;
+        .about-left{
+            width: 100% !important;
+            .title-about{
+                font-size: 40px; 
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            .about1{
+                p{
+                    font-size: 15px;
+                    width: 100% !important;
+                }
+            }
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center!important;
+            align-items: center !important;
+            width: 100% !important;
+            margin-right: 0 !important;
+            margin: 0 auto !important;
+
+            .light{
+                width: 300px !important;
+                margin-top: -190px;
+
+            }
+            .wumpuss{
+                width: 250px;
+            }
+        }
+    
+    .about-left{
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+
+        .title-about{
+            font-size: 40px; 
+            margin-bottom: 20px;
+        }
+        .about1{
+            p{
+                font-size: 15px;
+            }
+        }
+      
+    }
+  }
+    
+}
+
+
+@media (max-width:450px){
+ 
+  
+    .glow1 {
+    display: none !important;
+    }
+
+    
+}
